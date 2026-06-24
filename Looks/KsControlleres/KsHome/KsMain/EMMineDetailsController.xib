@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner" customClass="EMMineDetailsController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="AIhBtn" destination="PhY-Gj-S7n" id="fZQ-Yf-6fJ"/>
+                <outlet property="chatBtn" destination="gur-zj-JEK" id="wuq-ym-cnT"/>
+                <outlet property="line" destination="vuP-DC-VyY" id="991-Nu-S4r"/>
+                <outlet property="lineLeftLayout" destination="ZDm-F1-98e" id="kVq-P3-ZA3"/>
+                <outlet property="titleView" destination="ajJ-N6-xRn" id="fl9-LC-clx"/>
+                <outlet property="view" destination="bgd-KE-SeW" id="znY-ui-MVF"/>
+                <outlet property="voiceBtn" destination="n1T-QV-O3z" id="VOg-KO-ija"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bgd-KE-SeW">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajJ-N6-xRn">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" tag="801" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gur-zj-JEK">
+                            <rect key="frame" x="16" y="0.0" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60.04" id="6y5-7k-jCu"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="文字对话">
+                                <color key="titleColor" red="0.47450980392156861" green="0.9882352941176471" blue="0.62745098039215685" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="1cv-yL-3AC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="802" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n1T-QV-O3z">
+                            <rect key="frame" x="106" y="0.0" width="60" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="59.98" id="06N-A0-606"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="语音对话">
+                                <color key="titleColor" red="0.89803921568627454" green="0.90196078431372551" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="J4j-md-3Hz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="803" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PhY-Gj-S7n">
+                            <rect key="frame" x="196" y="0.0" width="46" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="45.98" id="bWF-jg-331"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="AI绘画">
+                                <color key="titleColor" red="0.8980392157" green="0.90196078430000004" blue="0.8980392157" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="itemClick:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="Yu7-7W-9iQ"/>
+                            </connections>
+                        </button>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeVertical" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-DC-VyY">
+                            <rect key="frame" x="30" y="37" width="29" height="4"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="gur-zj-JEK" firstAttribute="top" secondItem="ajJ-N6-xRn" secondAttribute="top" id="Hx7-TO-pwC"/>
+                        <constraint firstItem="vuP-DC-VyY" firstAttribute="leading" secondItem="ajJ-N6-xRn" secondAttribute="leading" constant="30.02" id="ZDm-F1-98e"/>
+                        <constraint firstAttribute="bottom" secondItem="vuP-DC-VyY" secondAttribute="bottom" constant="3.01" id="KgH-Kv-h4M"/>
+                        <constraint firstItem="gur-zj-JEK" firstAttribute="leading" secondItem="ajJ-N6-xRn" secondAttribute="leading" constant="16.01" id="FWT-2W-eiP"/>
+                        <constraint firstItem="n1T-QV-O3z" firstAttribute="top" secondItem="ajJ-N6-xRn" secondAttribute="top" id="8OO-rw-dhq"/>
+                        <constraint firstAttribute="bottom" secondItem="PhY-Gj-S7n" secondAttribute="bottom" id="DCs-iS-hLD"/>
+                        <constraint firstAttribute="bottom" secondItem="gur-zj-JEK" secondAttribute="bottom" id="q8g-Fe-SVS"/>
+                        <constraint firstAttribute="height" constant="43.99" id="XEx-gR-lYY"/>
+                        <constraint firstItem="PhY-Gj-S7n" firstAttribute="leading" secondItem="n1T-QV-O3z" secondAttribute="trailing" constant="29.99" id="wWA-Zz-B6k"/>
+                        <constraint firstItem="PhY-Gj-S7n" firstAttribute="top" secondItem="ajJ-N6-xRn" secondAttribute="top" id="ihu-fp-VgR"/>
+                        <constraint firstItem="n1T-QV-O3z" firstAttribute="leading" secondItem="gur-zj-JEK" secondAttribute="trailing" constant="29.99" id="oYM-zT-2dh"/>
+                        <constraint firstAttribute="bottom" secondItem="n1T-QV-O3z" secondAttribute="bottom" id="JMR-qI-wmy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="7TD-pq-t5Z"/>
+            <constraints>
+                <constraint firstItem="ajJ-N6-xRn" firstAttribute="top" secondItem="7TD-pq-t5Z" secondAttribute="top" id="FVO-td-USP"/>
+                <constraint firstItem="ajJ-N6-xRn" firstAttribute="leading" secondItem="bgd-KE-SeW" secondAttribute="leading" id="gY1-tE-07m"/>
+                <constraint firstAttribute="trailing" secondItem="ajJ-N6-xRn" secondAttribute="trailing" id="XxB-1i-frx"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="welcomeVertical" width="29" height="4"/>
+    </resources>
+</document>

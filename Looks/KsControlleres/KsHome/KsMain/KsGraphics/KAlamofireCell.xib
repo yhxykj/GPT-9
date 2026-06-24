@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="116" id="tDq-gU-9om" customClass="KAlamofireCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tDq-gU-9om" id="b9f-oc-blc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zam-Xz-4yG">
+                        <rect key="frame" x="16" y="4" width="288" height="108"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8x6-fU-mEB">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="108"/>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="14"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qho-Vl-9i9">
+                                <rect key="frame" x="12" y="12" width="54" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="53.98" id="ivG-v4-Ne0"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e2n-BV-tpS">
+                                <rect key="frame" x="80" y="43.666666666666664" width="42" height="20.999999999999993"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.96" id="kN5-i4-FcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phoneRegister_d1" translatesAutoresizingMaskIntoConstraints="NO" id="0eM-Ml-Z1Z">
+                                <rect key="frame" x="237" y="41" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25.98" id="Ss5-Ny-8Fs"/>
+                                    <constraint firstAttribute="height" constant="26.02" id="JOp-gF-7ZH"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8x6-fU-mEB" secondAttribute="trailing" id="Tht-id-Rkr"/>
+                            <constraint firstItem="qho-Vl-9i9" firstAttribute="top" secondItem="zam-Xz-4yG" secondAttribute="top" constant="11.99" id="pFc-WF-m5A"/>
+                            <constraint firstItem="8x6-fU-mEB" firstAttribute="leading" secondItem="zam-Xz-4yG" secondAttribute="leading" id="mCa-f5-QkZ"/>
+                            <constraint firstItem="e2n-BV-tpS" firstAttribute="centerY" secondItem="zam-Xz-4yG" secondAttribute="centerY" id="lMb-3S-Xz4"/>
+                            <constraint firstItem="8x6-fU-mEB" firstAttribute="top" secondItem="zam-Xz-4yG" secondAttribute="top" id="XGp-u8-SPb"/>
+                            <constraint firstAttribute="bottom" secondItem="qho-Vl-9i9" secondAttribute="bottom" constant="11.02" id="iBr-Zm-j2O"/>
+                            <constraint firstItem="0eM-Ml-Z1Z" firstAttribute="centerY" secondItem="zam-Xz-4yG" secondAttribute="centerY" id="Eqt-wx-YsB"/>
+                            <constraint firstAttribute="trailing" secondItem="0eM-Ml-Z1Z" secondAttribute="trailing" constant="25.01" id="dfC-fB-xRM"/>
+                            <constraint firstAttribute="bottom" secondItem="8x6-fU-mEB" secondAttribute="bottom" id="Z7d-8X-j1O"/>
+                            <constraint firstItem="qho-Vl-9i9" firstAttribute="leading" secondItem="zam-Xz-4yG" secondAttribute="leading" constant="12.01" id="OJa-j1-ugg"/>
+                            <constraint firstItem="e2n-BV-tpS" firstAttribute="leading" secondItem="qho-Vl-9i9" secondAttribute="trailing" constant="13.98" id="Mbo-kB-SlK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="14"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zam-Xz-4yG" firstAttribute="top" secondItem="b9f-oc-blc" secondAttribute="top" constant="4.02" id="9TM-Ol-FQa"/>
+                    <constraint firstAttribute="trailing" secondItem="zam-Xz-4yG" secondAttribute="trailing" constant="16.02" id="HAS-40-Mog"/>
+                    <constraint firstItem="zam-Xz-4yG" firstAttribute="leading" secondItem="b9f-oc-blc" secondAttribute="leading" constant="16.02" id="xuC-Pi-nzN"/>
+                    <constraint firstAttribute="bottom" secondItem="zam-Xz-4yG" secondAttribute="bottom" constant="4.01" id="XHh-oL-sW3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qeV-Sq-Rw2"/>
+            <connections>
+                <outlet property="icon" destination="qho-Vl-9i9" id="IIm-g9-652"/>
+                <outlet property="label" destination="e2n-BV-tpS" id="Yqq-qU-j6L"/>
+                <outlet property="selectImg" destination="0eM-Ml-Z1Z" id="DnF-0O-VZq"/>
+            </connections>
+            <point key="canvasLocation" x="125.19083969465649" y="54.225352112676056"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="phoneRegister_d1" width="26" height="26"/>
+    </resources>
+</document>

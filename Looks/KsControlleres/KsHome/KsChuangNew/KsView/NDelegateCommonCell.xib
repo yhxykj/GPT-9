@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="tDq-gU-9om" customClass="NDelegateCommonCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tDq-gU-9om" id="b9f-oc-blc">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzS-J1-3mn">
+                        <rect key="frame" x="36" y="37" width="37.333333333333343" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yloadingSearch" translatesAutoresizingMaskIntoConstraints="NO" id="GIU-oI-16K">
+                        <rect key="frame" x="264" y="36" width="20" height="20"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="GIU-oI-16K" secondAttribute="trailing" constant="36.01" id="Crd-Y9-Aif"/>
+                    <constraint firstItem="vzS-J1-3mn" firstAttribute="leading" secondItem="b9f-oc-blc" secondAttribute="leading" constant="35.96" id="LgF-vA-K0A"/>
+                    <constraint firstItem="GIU-oI-16K" firstAttribute="centerY" secondItem="b9f-oc-blc" secondAttribute="centerY" id="iOh-cU-tRH"/>
+                    <constraint firstItem="vzS-J1-3mn" firstAttribute="centerY" secondItem="b9f-oc-blc" secondAttribute="centerY" id="Sfi-fd-o6B"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qeV-Sq-Rw2"/>
+            <connections>
+                <outlet property="label" destination="vzS-J1-3mn" id="fXt-oi-DnD"/>
+                <outlet property="s_icon" destination="GIU-oI-16K" id="YNA-K7-J55"/>
+            </connections>
+            <point key="canvasLocation" x="130.76923076923077" y="-29.14691943127962"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="yloadingSearch" width="20" height="20"/>
+    </resources>
+</document>

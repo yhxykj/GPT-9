@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner" customClass="ZQRingClassController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="Ca9-oK-SCv" id="n42-DI-gJe"/>
+                <outlet property="nav_label" destination="rFT-gQ-LrG" id="hCe-45-sXu"/>
+                <outlet property="view" destination="bgd-KE-SeW" id="znY-ui-MVF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bgd-KE-SeW">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vo6-78-rjS">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlZ-2f-8Vr">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.01" id="Jm8-eP-2jt"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ringApplogo"/>
+                            <connections>
+                                <action selector="back:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="Rmb-Kx-Axz"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFT-gQ-LrG">
+                            <rect key="frame" x="174" y="11.666666666666664" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="wlZ-2f-8Vr" firstAttribute="leading" secondItem="Vo6-78-rjS" secondAttribute="leading" id="AyW-8V-ZSB"/>
+                        <constraint firstAttribute="bottom" secondItem="wlZ-2f-8Vr" secondAttribute="bottom" id="SLe-iY-Uvq"/>
+                        <constraint firstItem="rFT-gQ-LrG" firstAttribute="centerX" secondItem="Vo6-78-rjS" secondAttribute="centerX" id="Uid-Sr-19O"/>
+                        <constraint firstAttribute="height" constant="43.99" id="XoR-fm-W62"/>
+                        <constraint firstItem="wlZ-2f-8Vr" firstAttribute="top" secondItem="Vo6-78-rjS" secondAttribute="top" id="LjH-H1-rTM"/>
+                        <constraint firstItem="rFT-gQ-LrG" firstAttribute="centerY" secondItem="Vo6-78-rjS" secondAttribute="centerY" id="VsI-xn-MXX"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Ca9-oK-SCv">
+                    <rect key="frame" x="0.0" y="91" width="390" height="625"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cxo-VN-wUL">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Z1t-RT-NHT" id="NY9-Wv-JjG"/>
+                        <outlet property="delegate" destination="Z1t-RT-NHT" id="Rhu-qY-wp7"/>
+                    </connections>
+                </collectionView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yI2-qs-G9v">
+                    <rect key="frame" x="16" y="741" width="358" height="54"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="beginCloseShow"/>
+                    <connections>
+                        <action selector="done:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="9Rw-Ah-dN3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="k0y-ws-PPj"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="trailing" secondItem="Ca9-oK-SCv" secondAttribute="trailing" id="zkV-rM-DEF"/>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="trailing" secondItem="Vo6-78-rjS" secondAttribute="trailing" id="oDg-6E-0d5"/>
+                <constraint firstItem="Vo6-78-rjS" firstAttribute="top" secondItem="k0y-ws-PPj" secondAttribute="top" id="8A6-9w-bwI"/>
+                <constraint firstItem="yI2-qs-G9v" firstAttribute="top" secondItem="Ca9-oK-SCv" secondAttribute="bottom" constant="24.98" id="htH-0r-6AQ"/>
+                <constraint firstItem="yI2-qs-G9v" firstAttribute="leading" secondItem="k0y-ws-PPj" secondAttribute="leading" constant="15.97" id="dGh-u3-VMX"/>
+                <constraint firstItem="Ca9-oK-SCv" firstAttribute="top" secondItem="Vo6-78-rjS" secondAttribute="bottom" id="eaS-gd-xZK"/>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="bottom" secondItem="yI2-qs-G9v" secondAttribute="bottom" constant="14.96" id="ZZH-HV-xft"/>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="trailing" secondItem="yI2-qs-G9v" secondAttribute="trailing" constant="15.96" id="V0E-bR-vlT"/>
+                <constraint firstItem="Vo6-78-rjS" firstAttribute="leading" secondItem="k0y-ws-PPj" secondAttribute="leading" id="xiw-Yn-Tgi"/>
+                <constraint firstItem="Ca9-oK-SCv" firstAttribute="leading" secondItem="k0y-ws-PPj" secondAttribute="leading" id="FX6-Ny-l3f"/>
+            </constraints>
+            <point key="canvasLocation" x="125" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="beginCloseShow" width="358" height="54"/>
+        <image name="ringApplogo" width="10" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

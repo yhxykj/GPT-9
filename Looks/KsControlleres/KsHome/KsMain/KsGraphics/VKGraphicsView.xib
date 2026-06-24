@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sTI-RF-oid" customClass="VKGraphicsView" customModule="Looks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" alpha="0.40000000000000002" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ij7-Xp-qiG">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="661"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="BMe-Rv-TSU" appends="YES" id="tQK-8B-etw"/>
+                    </connections>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="goS-4d-bAo">
+                    <rect key="frame" x="0.0" y="201" width="393" height="460"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择风格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3S-b9-jwR">
+                            <rect key="frame" x="161.66666666666666" y="18" width="70" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="19.989999999999998" id="ZaN-U2-aWn"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="VeV-NM-p7K">
+                            <rect key="frame" x="0.0" y="46" width="393" height="414"/>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.062745098039215685" green="0.062745098039215685" blue="0.090196078431372548" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="K3S-b9-jwR" firstAttribute="centerX" secondItem="goS-4d-bAo" secondAttribute="centerX" id="0bK-KE-R90"/>
+                        <constraint firstItem="K3S-b9-jwR" firstAttribute="top" secondItem="goS-4d-bAo" secondAttribute="top" constant="17.989999999999998" id="BHG-JH-cL4"/>
+                        <constraint firstAttribute="trailing" secondItem="VeV-NM-p7K" secondAttribute="trailing" id="FxG-t5-Lkt"/>
+                        <constraint firstItem="VeV-NM-p7K" firstAttribute="leading" secondItem="goS-4d-bAo" secondAttribute="leading" id="SDl-Bf-pKY"/>
+                        <constraint firstItem="VeV-NM-p7K" firstAttribute="top" secondItem="K3S-b9-jwR" secondAttribute="bottom" constant="7.9800000000000004" id="e5D-Vx-hbz"/>
+                        <constraint firstAttribute="bottom" secondItem="VeV-NM-p7K" secondAttribute="bottom" id="uz5-wk-iSA"/>
+                        <constraint firstAttribute="height" constant="459.97000000000003" id="xtr-5V-NQC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="goS-4d-bAo" firstAttribute="leading" secondItem="sTI-RF-oid" secondAttribute="leading" id="7yL-fR-QAN"/>
+                <constraint firstItem="ij7-Xp-qiG" firstAttribute="top" secondItem="sTI-RF-oid" secondAttribute="top" id="Eki-Qr-tAt"/>
+                <constraint firstItem="ij7-Xp-qiG" firstAttribute="leading" secondItem="sTI-RF-oid" secondAttribute="leading" id="NZc-ae-wzc"/>
+                <constraint firstAttribute="bottom" secondItem="goS-4d-bAo" secondAttribute="bottom" id="Qob-dQ-US8"/>
+                <constraint firstAttribute="trailing" secondItem="ij7-Xp-qiG" secondAttribute="trailing" id="Y7l-69-uij"/>
+                <constraint firstAttribute="trailing" secondItem="goS-4d-bAo" secondAttribute="trailing" id="jiG-N2-xeo"/>
+                <constraint firstAttribute="bottom" secondItem="ij7-Xp-qiG" secondAttribute="bottom" id="uZ6-vD-zcG"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="VeV-NM-p7K" id="oQS-FN-MCh"/>
+            </connections>
+            <point key="canvasLocation" x="96.946564885496173" y="349.64788732394368"/>
+        </view>
+        <tapGestureRecognizer id="BMe-Rv-TSU">
+            <connections>
+                <action selector="dissmiss:" destination="sTI-RF-oid" id="j7h-sZ-nJ7"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

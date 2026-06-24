@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZLP-vk-uus" customClass="LTXItemCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="145"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfP-a8-zPi">
+                        <rect key="frame" x="15" y="42.666666666666657" width="313" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veV-GP-b2y">
+                                <rect key="frame" x="21" y="21" width="233" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRI-3q-MpI">
+                                <rect key="frame" x="269" y="19" width="44" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.97" id="HMj-6R-tqW"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="aymentPopup"/>
+                                <connections>
+                                    <action selector="down:" destination="ZLP-vk-uus" eventType="touchUpInside" id="BJ9-M6-mNY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.97254901960784312" blue="0.9882352941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="veV-GP-b2y" firstAttribute="centerY" secondItem="lfP-a8-zPi" secondAttribute="centerY" id="b7U-pV-08I"/>
+                            <constraint firstItem="GRI-3q-MpI" firstAttribute="leading" secondItem="veV-GP-b2y" secondAttribute="trailing" constant="15.01" id="BoM-5h-Scl"/>
+                            <constraint firstItem="GRI-3q-MpI" firstAttribute="centerY" secondItem="lfP-a8-zPi" secondAttribute="centerY" id="GCM-db-bE1"/>
+                            <constraint firstAttribute="trailing" secondItem="GRI-3q-MpI" secondAttribute="trailing" id="SuG-8u-Ihf"/>
+                            <constraint firstAttribute="height" constant="59.99" id="WYi-r0-rtu"/>
+                            <constraint firstItem="veV-GP-b2y" firstAttribute="leading" secondItem="lfP-a8-zPi" secondAttribute="leading" constant="20.98" id="YrH-7k-OPt"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="iaT-Ul-3gE"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lfP-a8-zPi" secondAttribute="trailing" constant="15.03" id="Xg6-FY-Gsd"/>
+                <constraint firstItem="lfP-a8-zPi" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" constant="15.01" id="3Fu-h1-eTt"/>
+                <constraint firstItem="lfP-a8-zPi" firstAttribute="centerY" secondItem="ZLP-vk-uus" secondAttribute="centerY" id="vYW-Mq-yMG"/>
+            </constraints>
+            <size key="customSize" width="343" height="145"/>
+            <connections>
+                <outlet property="labeel" destination="veV-GP-b2y" id="f56-cw-e7S"/>
+            </connections>
+            <point key="canvasLocation" x="254.61538461538461" y="-39.454976303317537"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="aymentPopup" width="15" height="8"/>
+    </resources>
+</document>
