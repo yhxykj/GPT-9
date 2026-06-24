@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZLP-vk-uus" customClass="KMZSearchMineCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prefix_haBuffer" translatesAutoresizingMaskIntoConstraints="NO" id="tfs-c7-XFU">
+                        <rect key="frame" x="0.0" y="0.0" width="388" height="712"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EU6-5g-fCC">
+                        <rect key="frame" x="22" y="588" width="344" height="88"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="87.99" id="pZ1-8T-nQw"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="22"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="iaT-Ul-3gE"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="EU6-5g-fCC" secondAttribute="trailing" constant="22.01" id="IXw-pi-W26"/>
+                <constraint firstAttribute="bottom" secondItem="EU6-5g-fCC" secondAttribute="bottom" constant="36.02" id="XeP-x5-Pk2"/>
+                <constraint firstItem="tfs-c7-XFU" firstAttribute="top" secondItem="ZLP-vk-uus" secondAttribute="top" id="Q0D-nO-hdV"/>
+                <constraint firstItem="EU6-5g-fCC" firstAttribute="centerX" secondItem="ZLP-vk-uus" secondAttribute="centerX" id="rby-Lk-iYc"/>
+                <constraint firstItem="EU6-5g-fCC" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" constant="22.01" id="yOO-fC-q4W"/>
+                <constraint firstAttribute="trailing" secondItem="tfs-c7-XFU" secondAttribute="trailing" id="hgK-IK-zsk"/>
+                <constraint firstItem="tfs-c7-XFU" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" id="avv-wk-mLf"/>
+                <constraint firstAttribute="bottom" secondItem="tfs-c7-XFU" secondAttribute="bottom" id="MZj-Jg-ROp"/>
+            </constraints>
+            <size key="customSize" width="388" height="712"/>
+            <connections>
+                <outlet property="Icon" destination="tfs-c7-XFU" id="5zg-Br-BsH"/>
+                <outlet property="button" destination="EU6-5g-fCC" id="LdJ-UR-JGu"/>
+            </connections>
+            <point key="canvasLocation" x="219.84732824427479" y="36.619718309859159"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="prefix_haBuffer" width="390" height="844"/>
+    </resources>
+</document>

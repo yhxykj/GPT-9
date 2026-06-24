@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="4Qc-AH-i17" customClass="ASSpeedsView" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQj-bC-GMr">
+                    <rect key="frame" x="17.999999999999996" y="12" width="40.666666666666657" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="22.05" id="kCa-kI-OC2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.5607843137254902" green="0.57647058823529407" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="gAO-Pl-WEt"/>
+            <constraints>
+                <constraint firstItem="WQj-bC-GMr" firstAttribute="top" secondItem="4Qc-AH-i17" secondAttribute="top" constant="11.97" id="DoE-ew-hXl"/>
+                <constraint firstItem="WQj-bC-GMr" firstAttribute="leading" secondItem="4Qc-AH-i17" secondAttribute="leading" constant="18.01" id="EJl-TM-DL9"/>
+            </constraints>
+            <connections>
+                <outlet property="headerLabel" destination="WQj-bC-GMr" id="f8Z-x5-Sxt"/>
+            </connections>
+            <point key="canvasLocation" x="-34" y="-48"/>
+        </collectionReusableView>
+    </objects>
+</document>

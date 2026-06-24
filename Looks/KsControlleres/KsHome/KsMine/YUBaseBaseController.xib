@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner" customClass="YUBaseBaseController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="gressView" destination="MFg-Ku-oWT" id="LW9-HI-ikn"/>
+                <outlet property="titlelabel" destination="evs-gk-XxL" id="iM0-Ju-AWo"/>
+                <outlet property="view" destination="bgd-KE-SeW" id="znY-ui-MVF"/>
+                <outlet property="webView" destination="S9x-on-rku" id="I45-YR-joT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bgd-KE-SeW">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOx-Mp-64m">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aNn-06-OGu">
+                            <rect key="frame" x="0.0" y="0.0" width="55" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="55.02" id="7nY-iL-ks3"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ringApplogo"/>
+                            <connections>
+                                <action selector="back:" destination="Z1t-RT-NHT" eventType="touchUpInside" id="3DW-1e-bYm"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evs-gk-XxL">
+                            <rect key="frame" x="187.33333333333334" y="11.666666666666664" width="15.333333333333343" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="MFg-Ku-oWT">
+                            <rect key="frame" x="0.0" y="42" width="390" height="2"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1.99" id="4Gk-iH-hsd"/>
+                            </constraints>
+                        </progressView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="aNn-06-OGu" firstAttribute="leading" secondItem="jOx-Mp-64m" secondAttribute="leading" id="rQD-NY-1SG"/>
+                        <constraint firstAttribute="bottom" secondItem="MFg-Ku-oWT" secondAttribute="bottom" id="RTt-7I-2T7"/>
+                        <constraint firstAttribute="trailing" secondItem="MFg-Ku-oWT" secondAttribute="trailing" id="kDQ-Dy-IZw"/>
+                        <constraint firstItem="MFg-Ku-oWT" firstAttribute="leading" secondItem="jOx-Mp-64m" secondAttribute="leading" id="MAD-a7-TgT"/>
+                        <constraint firstItem="evs-gk-XxL" firstAttribute="centerX" secondItem="jOx-Mp-64m" secondAttribute="centerX" id="RM6-Ux-xpk"/>
+                        <constraint firstAttribute="height" constant="43.99" id="6xy-7k-wjb"/>
+                        <constraint firstAttribute="bottom" secondItem="aNn-06-OGu" secondAttribute="bottom" id="Zwb-Ep-pfY"/>
+                        <constraint firstItem="evs-gk-XxL" firstAttribute="centerY" secondItem="jOx-Mp-64m" secondAttribute="centerY" id="ZNo-31-03h"/>
+                        <constraint firstItem="aNn-06-OGu" firstAttribute="top" secondItem="jOx-Mp-64m" secondAttribute="top" id="7lg-bq-48F"/>
+                    </constraints>
+                </view>
+                <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S9x-on-rku">
+                    <rect key="frame" x="0.0" y="91" width="390" height="719"/>
+                    <wkWebViewConfiguration key="configuration">
+                        <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                        <wkPreferences key="preferences"/>
+                    </wkWebViewConfiguration>
+                </wkWebView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="k0y-ws-PPj"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jOx-Mp-64m" firstAttribute="leading" secondItem="k0y-ws-PPj" secondAttribute="leading" id="qBb-5A-fZB"/>
+                <constraint firstItem="S9x-on-rku" firstAttribute="top" secondItem="jOx-Mp-64m" secondAttribute="bottom" id="csF-zi-KX0"/>
+                <constraint firstItem="jOx-Mp-64m" firstAttribute="top" secondItem="k0y-ws-PPj" secondAttribute="top" id="74C-vz-rmY"/>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="trailing" secondItem="S9x-on-rku" secondAttribute="trailing" id="E77-N6-lXl"/>
+                <constraint firstItem="k0y-ws-PPj" firstAttribute="bottom" secondItem="S9x-on-rku" secondAttribute="bottom" id="d1Q-3f-0Zg"/>
+                <constraint firstItem="S9x-on-rku" firstAttribute="leading" secondItem="k0y-ws-PPj" secondAttribute="leading" id="R1K-sa-bZ6"/>
+                <constraint firstAttribute="trailing" secondItem="jOx-Mp-64m" secondAttribute="trailing" id="ITu-SX-DV4"/>
+            </constraints>
+            <point key="canvasLocation" x="131" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ringApplogo" width="10" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
