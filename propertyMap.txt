@@ -1,0 +1,8 @@
+{
+  "silenceThreshold" : "numberlabelRelation",
+  "speechRecognizer" : "speedsElevt",
+  "voiceCancel" : "listText",
+  "generator" : "dealloc_tmLiholderlabel",
+  "recognitionTask" : "reusableSuccess",
+  "recognitionRequest" : "buttonplayHanding"
+}
