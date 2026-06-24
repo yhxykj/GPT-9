@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZLP-vk-uus" customClass="APopupCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1C9-YQ-Q09">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="68"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="iaT-Ul-3gE"/>
+            <constraints>
+                <constraint firstItem="1C9-YQ-Q09" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" id="0yI-2a-EVj"/>
+                <constraint firstItem="1C9-YQ-Q09" firstAttribute="top" secondItem="ZLP-vk-uus" secondAttribute="top" id="5EQ-Co-y2D"/>
+                <constraint firstAttribute="trailing" secondItem="1C9-YQ-Q09" secondAttribute="trailing" id="AlY-sN-ds8"/>
+                <constraint firstAttribute="bottom" secondItem="1C9-YQ-Q09" secondAttribute="bottom" id="qs3-zr-3YO"/>
+            </constraints>
+            <size key="customSize" width="142" height="68"/>
+            <connections>
+                <outlet property="titlelabel" destination="1C9-YQ-Q09" id="Wf8-CL-Fnl"/>
+            </connections>
+            <point key="canvasLocation" x="201.53846153846152" y="-5.6872037914691944"/>
+        </collectionViewCell>
+    </objects>
+</document>

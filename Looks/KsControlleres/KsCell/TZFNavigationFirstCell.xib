@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="ZLP-vk-uus" customClass="TZFNavigationFirstCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="417" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="417" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzU-S3-LDF">
+                        <rect key="frame" x="15" y="11" width="397" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18.02" id="1pX-BV-Jrq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SwF-qL-zde">
+                        <rect key="frame" x="15" y="34" width="397" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24.98" id="EUw-oy-6eY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatarPhoneChuang" translatesAutoresizingMaskIntoConstraints="NO" id="16B-eE-mO6">
+                        <rect key="frame" x="320" y="0.0" width="97" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="96.98" id="xfh-3L-jHU"/>
+                            <constraint firstAttribute="height" constant="34.99" id="X4n-IA-CdB"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="iaT-Ul-3gE"/>
+            <constraints>
+                <constraint firstItem="16B-eE-mO6" firstAttribute="top" secondItem="ZLP-vk-uus" secondAttribute="top" id="SYO-6m-Ot3"/>
+                <constraint firstAttribute="trailing" secondItem="SwF-qL-zde" secondAttribute="trailing" constant="4.99" id="GNT-A9-BrO"/>
+                <constraint firstAttribute="trailing" secondItem="16B-eE-mO6" secondAttribute="trailing" id="dGv-2H-jPs"/>
+                <constraint firstItem="SwF-qL-zde" firstAttribute="top" secondItem="ZzU-S3-LDF" secondAttribute="bottom" constant="5.01" id="Rit-QC-Tk6"/>
+                <constraint firstItem="ZzU-S3-LDF" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" constant="14.97" id="Slh-2J-nta"/>
+                <constraint firstItem="SwF-qL-zde" firstAttribute="leading" secondItem="ZLP-vk-uus" secondAttribute="leading" constant="14.99" id="GFp-9V-Xd4"/>
+                <constraint firstItem="ZzU-S3-LDF" firstAttribute="top" secondItem="ZLP-vk-uus" secondAttribute="top" constant="11.01" id="fdr-d3-4j2"/>
+                <constraint firstAttribute="trailing" secondItem="ZzU-S3-LDF" secondAttribute="trailing" constant="4.99" id="CxP-7M-RKP"/>
+            </constraints>
+            <size key="customSize" width="417" height="160"/>
+            <connections>
+                <outlet property="rmblabel" destination="SwF-qL-zde" id="Cti-7T-7sp"/>
+                <outlet property="timelabel" destination="ZzU-S3-LDF" id="AFx-tw-YrR"/>
+                <outlet property="yhlogoIcon" destination="16B-eE-mO6" id="VQn-yg-Pxd"/>
+            </connections>
+            <point key="canvasLocation" x="342.30769230769232" y="51.895734597156398"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="avatarPhoneChuang" width="97" height="35"/>
+    </resources>
+</document>

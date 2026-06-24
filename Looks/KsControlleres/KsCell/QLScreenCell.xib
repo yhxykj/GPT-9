@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="Z1t-RT-NHT" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="pBR-Hc-Uz7" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="78" id="tDq-gU-9om" customClass="QLScreenCell" customModule="Bulter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="tDq-gU-9om" id="b9f-oc-blc">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="78"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FXr-z6-U5s">
+                        <rect key="frame" x="16" y="4" width="336" height="68"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="帮我给我的女友写一封情书，表达爱意的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iUH-Hl-3Wf">
+                                <rect key="frame" x="16" y="25" width="304" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.80392156859999997" green="0.80392156859999997" blue="0.80392156859999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.074509803920000006" green="0.078431372550000003" blue="0.094117647060000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="iUH-Hl-3Wf" firstAttribute="leading" secondItem="FXr-z6-U5s" secondAttribute="leading" constant="15.99" id="N47-T1-gX0"/>
+                            <constraint firstAttribute="height" constant="67.98" id="Y60-Ac-GLF"/>
+                            <constraint firstItem="iUH-Hl-3Wf" firstAttribute="centerY" secondItem="FXr-z6-U5s" secondAttribute="centerY" id="PMS-nF-vo8"/>
+                            <constraint firstAttribute="trailing" secondItem="iUH-Hl-3Wf" secondAttribute="trailing" constant="16.03" id="n8u-nN-NbQ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FXr-z6-U5s" firstAttribute="leading" secondItem="b9f-oc-blc" secondAttribute="leading" constant="16.04" id="Jwm-ir-dif"/>
+                    <constraint firstAttribute="trailing" secondItem="FXr-z6-U5s" secondAttribute="trailing" constant="16.03" id="uJi-6D-ifG"/>
+                    <constraint firstAttribute="bottom" secondItem="FXr-z6-U5s" secondAttribute="bottom" constant="3.97" id="LPL-r0-DR4"/>
+                    <constraint firstItem="FXr-z6-U5s" firstAttribute="top" secondItem="b9f-oc-blc" secondAttribute="top" constant="4.01" id="fqm-vJ-apZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qeV-Sq-Rw2"/>
+            <connections>
+                <outlet property="label" destination="iUH-Hl-3Wf" id="pbD-Sh-OUB"/>
+            </connections>
+            <point key="canvasLocation" x="166.41221374045801" y="-0.70422535211267612"/>
+        </tableViewCell>
+    </objects>
+</document>
